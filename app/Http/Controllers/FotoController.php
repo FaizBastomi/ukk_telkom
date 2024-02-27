@@ -51,6 +51,6 @@ class FotoController extends Controller
         // delete from db
         $foto->delete();
 
-        return back();
+        return back()->with('success', 'Foto has been deleted');
     }
 }
